@@ -7,9 +7,11 @@ import { Link } from "react-router-dom";
 import { navItems, subLinks } from "./NavList";
 import { useState } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
 
 const NavBar = () => {
   const [showLinks, setShowLinks] = useState(false);
+  const [showMenu, handleShowMenu] = useState(false);
   return (
     <section className="navigation">
       <TopNav />
@@ -23,40 +25,42 @@ const NavBar = () => {
             />
           </Link>
         </figure>
-        <ul className="nav__links">
-          {navItems.map(({ id, title, path, cName }) => (
-            <li key={id} className={cName}>
-              {title === "Services" ? (
-                <>
-                  <span
-                    className="nav__link--item"
-                    onClick={() => setShowLinks(!showLinks)}
-                  >
-                    {title} {showLinks ? <FaAngleUp /> : <FaAngleDown />}
-                  </span>
-                  {showLinks && (
-                    <ul className="nav__sub--links">
-                      {subLinks.map(({ id, title, path, cName }) => (
-                        <li key={id} className={cName}>
-                          <Link className="nav__link--item" to={path}>
-                            {title}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </>
-              ) : (
-                <Link className="nav__link--item" to={path}>
-                  {title}
-                </Link>
-              )}
-            </li>
-          ))}
-        </ul>
+        {showMenu && (
+          <ul className="nav__links">
+            {navItems.map(({ id, title, path, cName }) => (
+              <li key={id} className={cName}>
+                {title === "Services" ? (
+                  <>
+                    <span
+                      className="nav__link--item"
+                      onClick={() => setShowLinks(!showLinks)}
+                    >
+                      {title} {showLinks ? <FaAngleUp /> : <FaAngleDown />}
+                    </span>
+                    {showLinks && (
+                      <ul className="nav__sub--links">
+                        {subLinks.map(({ id, title, path, cName }) => (
+                          <li key={id} className={cName}>
+                            <Link className="nav__link--item" to={path}>
+                              {title}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </>
+                ) : (
+                  <Link className="nav__link--item" to={path}>
+                    {title}
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
         <button className="nav__quote">Get A Quote</button>
-        <div className="nav__menu">
-          <GiHamburgerMenu className="nav__menu--button" />
+        <div className="nav__menu" onClick={() => handleShowMenu(!showMenu)}>
+          {showMenu ? <IoClose className="nav__menu--button" /> : <GiHamburgerMenu className="nav__menu--button"/>}
         </div>
       </nav>
     </section>
