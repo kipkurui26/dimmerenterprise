@@ -19,7 +19,9 @@ const NavBar = () => {
             />
           </Link>
         </figure>
-        <ul className="nav__links"></ul>
+        <ul className="nav__links">
+            
+        </ul>
         <div className="nav__menu">
           <GiHamburgerMenu className="nav__menu--button" />
         </div>
