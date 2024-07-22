@@ -5,13 +5,31 @@ import DimmerLogo from "../../assets/dimmer-logo.jpeg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { navItems, subLinks } from "./NavList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 
 const NavBar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const [showMenu, handleShowMenu] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  const getScreenWidth = ()=>{
+    setScreenWidth(window.innerWidth);
+  }
+
+  useEffect(()=>{
+    window.addEventListener('resize', getScreenWidth);
+    if(screenWidth >= 800){
+        handleShowMenu(true);
+    }else{
+        handleShowMenu(false);
+    }
+    return () => {
+      window.removeEventListener('resize', getScreenWidth);
+    }
+  }, [screenWidth])
+
   return (
     <section className="navigation">
       <TopNav />
@@ -32,7 +50,7 @@ const NavBar = () => {
                 {title === "Services" ? (
                   <>
                     <span
-                      className="nav__link--item"
+                      className="nav__link--item nav__link--services"
                       onClick={() => setShowLinks(!showLinks)}
                     >
                       {title} {showLinks ? <FaAngleUp /> : <FaAngleDown />}
@@ -60,7 +78,11 @@ const NavBar = () => {
         )}
         <button className="nav__quote">Get A Quote</button>
         <div className="nav__menu" onClick={() => handleShowMenu(!showMenu)}>
-          {showMenu ? <IoClose className="nav__menu--button" /> : <GiHamburgerMenu className="nav__menu--button"/>}
+          {showMenu ? (
+            <IoClose className="nav__menu--button" />
+          ) : (
+            <GiHamburgerMenu className="nav__menu--button" />
+          )}
         </div>
       </nav>
     </section>

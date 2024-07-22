@@ -14,7 +14,7 @@ export const navItems = [
   {
     id: 3,
     title: "Services",
-    cName: "nav__link service-link",
+    cName: "nav__link service__link",
   },
   {
     id: 4,

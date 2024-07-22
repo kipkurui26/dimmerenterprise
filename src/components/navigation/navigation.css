@@ -87,6 +87,7 @@
     padding: 8px 20px 8px 4px;
     border-radius: 3px;
     color: #082f49;
+    transition: all 0.3s ease;
 }
 .nav__link--item:hover{
     background: #138acf;
@@ -103,6 +104,10 @@
 }
 
 @media only screen and (min-width:800px){
+    .topnav__content--text{
+        display: inline;
+        opacity: 1;
+    }
     .nav{
         display: flex;
         justify-content: space-between;
@@ -125,15 +130,32 @@
         background: #00649d;
     }
     .nav__links{
+        background: unset;
+        height: 60px;
         position: unset;
         width: max-content;
         display: flex;
-        gap: 30px;
+        align-items: center;
+        overflow: unset;
+        padding: 0;
     }
     .nav__link{
-        list-style: none;
-        background: red;
-        padding: 2px 15px;
-        border-radius: 3px;
+        margin: 5px 10px;
+    }
+    .nav__link .nav__link--item{
+        padding: 4px 20px;
+        display: flex;
+        gap: 10px;
+    }
+    .nav__link--services{
+        position: relative;
+    }
+    .nav__sub--links{
+        padding: 20px 10px;
+        background: #e7e7e7;
+        position: absolute;
+        top: 99px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
     }
 }
