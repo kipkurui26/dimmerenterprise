@@ -28,37 +28,37 @@ export const subLinks = [
     {
         id: 1,
         title: 'Hydro-Geological Survey',
-        path: '/hydrogeological-survey',
+        path: '/services#hydrogeological-survey',
         cName: "nav__sub--link"
     },
     {
         id: 2,
         title: 'Borehole Drilling',
-        path: '/borehole-drilling',
+        path: '/services#borehole-drilling',
         cName: "nav__sub--link"
     },
     {
         id: 3,
         title: 'Camera Inspection',
-        path: '/camera-inspection',
+        path: '/services#camera-inspection',
         cName: "nav__sub--link"
     },
     {
         id: 4,
         title: 'Test Pumping',
-        path: '/test-pumping',
+        path: '/services#test-pumping',
         cName: "nav__sub--link"
     },
     {
         id: 5,
         title: 'Pump & Solar Installation',
-        path: '/pump-and-solar-installation',
+        path: '/services#pump-and-solar-installation',
         cName: "nav__sub--link"
     },
     {
         id: 6,
         title: 'Tower Construction',
-        path: '/tower-construction',
+        path: '/services#tower-construction',
         cName: "nav__sub--link"
     },
 ]
