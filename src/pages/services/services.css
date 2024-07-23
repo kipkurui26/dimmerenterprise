@@ -1,0 +1,6 @@
+.services > section{
+    width: 100%;
+    background: blue;
+    margin: 10px 0;
+    height: 600px;
+}

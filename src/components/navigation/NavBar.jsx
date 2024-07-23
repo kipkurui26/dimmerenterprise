@@ -4,31 +4,29 @@ import "./navigation.css";
 import DimmerLogo from "../../assets/dimmer-logo.jpeg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
-import { navItems, subLinks } from "./NavList";
+import { navItems } from "./NavList";
 import { useEffect, useState } from "react";
-import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 
 const NavBar = () => {
-  const [showLinks, setShowLinks] = useState(false);
   const [showMenu, handleShowMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  const getScreenWidth = ()=>{
+  const getScreenWidth = () => {
     setScreenWidth(window.innerWidth);
-  }
+  };
 
-  useEffect(()=>{
-    window.addEventListener('resize', getScreenWidth);
-    if(screenWidth >= 800){
-        handleShowMenu(true);
-    }else{
-        handleShowMenu(false);
+  useEffect(() => {
+    window.addEventListener("resize", getScreenWidth);
+    if (screenWidth >= 800) {
+      handleShowMenu(true);
+    } else {
+      handleShowMenu(false);
     }
     return () => {
-      window.removeEventListener('resize', getScreenWidth);
-    }
-  }, [screenWidth])
+      window.removeEventListener("resize", getScreenWidth);
+    };
+  }, [screenWidth]);
 
   return (
     <section className="navigation">
@@ -47,31 +45,9 @@ const NavBar = () => {
           <ul className="nav__links">
             {navItems.map(({ id, title, path, cName }) => (
               <li key={id} className={cName}>
-                {title === "Services" ? (
-                  <>
-                    <span
-                      className="nav__link--item nav__link--services"
-                      onClick={() => setShowLinks(!showLinks)}
-                    >
-                      {title} {showLinks ? <FaAngleUp /> : <FaAngleDown />}
-                    </span>
-                    {showLinks && (
-                      <ul className="nav__sub--links">
-                        {subLinks.map(({ id, title, path, cName }) => (
-                          <li key={id} className={cName}>
-                            <Link className="nav__link--item" to={path}>
-                              {title}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </>
-                ) : (
-                  <Link className="nav__link--item" to={path}>
-                    {title}
-                  </Link>
-                )}
+                <Link className="nav__link--item" to={path}>
+                  {title}
+                </Link>
               </li>
             ))}
           </ul>

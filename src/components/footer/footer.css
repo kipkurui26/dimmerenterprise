@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+.footer{
+    background: #edd467;
+    width: 100%;
+    padding: 20px 3%;
+}
+.footer__contanier{
+    padding: 2px 0 20px;
+}
+.footer__company--slogan{
+    font-size: 1.7em;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+.footer__company--title{
+    font-weight: 700;
+    font-size: 1.4em;
+    color: #1e1b4b;
+}
+.footer__company--description{
+    color:#1e1b4b;
+}
+.footer__company--icons{
+    padding: 20px 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+.footer__icons--list{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.footer__icons--link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #236803;
+    color: #ffffff;
+    font-size: 1.3em;
+    transition: all 0.3s ease;
+}
+.footer__icons--link:hover{
+    background: #1e1b4b;
+}
+.footer__title{
+    font-size: 1.3em;
+    color: #312e81;
+    padding-top: 8px;
+}
+.footer__services--links{
+    list-style: none;
+    margin: 5px 0;
+}
+.footer__services--link{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #1e1b4b;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.footer__services--link:hover{
+    letter-spacing: 1px;
+    color: #236803;
+}
+.footer__contact--content{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.footer__content--title{
+    font-weight: bold;
+    color: #1e1b4b;
+    font-size: 1.05em;
+}
+.footer__content--text{
+    color: #1e1b4b;
+}

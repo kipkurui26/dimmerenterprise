@@ -15,6 +15,7 @@ export const navItems = [
     id: 3,
     title: "Services",
     cName: "nav__link service__link",
+    path: '/services'
   },
   {
     id: 4,
