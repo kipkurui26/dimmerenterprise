@@ -1,17 +1,37 @@
 .banner{
     width: 100%;
+    background-image: url('../../assets/bannerImage.jpeg');
+    background-size: cover;
+
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
 }
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
 .banner__container{
+    position: relative;
     padding: 20px 3%;
+    z-index: 1;
 }
 .banner__span{
     font-size: 1.2em;
     font-weight: 600;
-    position: relative;
+    color: #f0c61e;
     padding-left: 10px;
-    color: #bc9600;
+    position: relative;
 }
-.banner__span::before{
+.banner__span::before {
     content: "";
     position: absolute;
     left: 0;
@@ -19,17 +39,17 @@
     width: 5px;
     height: 100%;
     background: #f0c61e;
-}
+  }
 .banner__title{
-    font-size: 1.6em;
-    color: #1e1b4b ;
+    font-size: 2em;
+    color: #fff ;
     padding: 10px 0;
 }
 .banner__description{
-    color: #1e1b4b;
+    color: #fff;
 }
 .banner__button{
-    margin: 10px 0;
+    margin: 15px 0;
     padding: 6px 50px;
     background: #138acf;
     color: #fff;

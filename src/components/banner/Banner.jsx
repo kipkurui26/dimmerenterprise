@@ -1,4 +1,5 @@
 import "./banner.css";
+import BannerImage from '../../assets/bannerImage.jpeg'
 
 const Banner = ({
   bannerTitle,
@@ -9,6 +10,9 @@ const Banner = ({
 }) => {
   return (
     <section className="banner">
+        {/* <figure className="banner__figure">
+            <img className='banner__image' src={BannerImage} alt="" />
+        </figure> */}
       <div className="banner__container">
         {isSpan && <span className="banner__span">{bannerSpan}</span>}
         <h1 className="banner__title">{bannerTitle}</h1>
