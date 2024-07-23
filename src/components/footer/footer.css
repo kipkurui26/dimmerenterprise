@@ -85,4 +85,40 @@
 .footer__content--text{
     color: #1e1b4b;
 }
+.footer__copy{
+    border-top: 2px darkblue solid;
+    padding-top: 20px;
+    width: 100%;
+}
+.footer__copyright{
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
 
+@media only screen and (min-width:723px) and (max-width:1023px){
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer__company{
+        width: 60%;
+        padding-right: 30px;
+    }
+    .footer__quicklinks,
+    .footer__contact{
+        width: 50%;
+    }
+}
+@media only screen and (min-width:1024px){
+    .footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__company{
+        width: 35%;
+    }
+    .footer__services{
+        width: 20%;
+    }
+}

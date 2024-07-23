@@ -1,8 +1,9 @@
 import "./footer.css";
 import { subLinks, navItems } from "../navigation/NavList";
 import { HashLink } from "react-router-hash-link";
-import { FaChevronRight } from "react-icons/fa";
 import {
+  FaChevronRight,
+  FaRegCopyright,
   FaFacebookF,
   FaWhatsapp,
   FaLinkedinIn,
@@ -107,6 +108,9 @@ const Footer = () => {
             </span>
           </div>
         </div>
+      </div>
+      <div className="footer__copy">
+        <span className="footer__copyright">&copy; {new Date().getFullYear()} Dimmer Enterprises LTD | All Rights Reserved.</span>
       </div>
     </section>
   );
