@@ -1,0 +1,43 @@
+.banner{
+    width: 100%;
+}
+.banner__container{
+    padding: 20px 3%;
+}
+.banner__span{
+    font-size: 1.2em;
+    font-weight: 600;
+    position: relative;
+    padding-left: 10px;
+    color: #bc9600;
+}
+.banner__span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: #f0c61e;
+}
+.banner__title{
+    font-size: 1.6em;
+    color: #1e1b4b ;
+    padding: 10px 0;
+}
+.banner__description{
+    color: #1e1b4b;
+}
+.banner__button{
+    margin: 10px 0;
+    padding: 6px 50px;
+    background: #138acf;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.banner__button:hover{
+    background: #1e1b4b;
+}

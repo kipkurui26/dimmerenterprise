@@ -3,7 +3,6 @@ import { subLinks, navItems } from "../navigation/NavList";
 import { HashLink } from "react-router-hash-link";
 import {
   FaChevronRight,
-  FaRegCopyright,
   FaFacebookF,
   FaWhatsapp,
   FaLinkedinIn,

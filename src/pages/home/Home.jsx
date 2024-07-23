@@ -1,12 +1,20 @@
-import './home.css'
+import Banner from "../../components/banner/Banner";
+import "./home.css";
 
 const Home = () => {
   return (
     <section className="home">
-      Home section
-
+      <Banner
+        isSpan={true}
+        bannerSpan={"Your One Stop Solution"}
+        bannerTitle={"Dimmer Enterprises Limited."}
+        bannerDescription={
+          "We don’t just drill boreholes; we build lifelines for communities. Our mission is to provide innovative, sustainable water solutions that enhance quality of life and support regional growth. Join us in our journey toward a sustainable future—each drop of water contributing to health, prosperity, and empowerment. Dimmer Enterprises LTD—drilling for a better tomorrow."
+        }
+        bannerButton={"Request a Quore"}
+      />
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
