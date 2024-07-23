@@ -97,7 +97,7 @@
 }
 
 @media only screen and (min-width:723px) and (max-width:1023px){
-    .footer{
+    .footer__cols{
         display: flex;
         flex-wrap: wrap;
     }
@@ -109,9 +109,12 @@
     .footer__contact{
         width: 50%;
     }
+    .footer__copy{
+        width: 100%;
+    }
 }
 @media only screen and (min-width:1024px){
-    .footer{
+    .footer__cols{
         display: flex;
         justify-content: space-between;
     }
@@ -120,5 +123,8 @@
     }
     .footer__services{
         width: 20%;
+    }
+    .footer__copy{
+        width: 100%;
     }
 }

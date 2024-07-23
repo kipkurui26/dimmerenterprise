@@ -2,13 +2,13 @@
     width: 100%;
     background-image: url('../../assets/bannerImage.jpeg');
     background-size: cover;
-
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     color: #fff;
+    padding: 4% 0;
 }
 .banner::before {
     content: "";
@@ -60,4 +60,10 @@
 }
 .banner__button:hover{
     background: #1e1b4b;
+}
+@media only screen and (min-width: 800px){
+    .banner__container{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
