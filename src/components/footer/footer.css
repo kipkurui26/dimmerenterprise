@@ -86,7 +86,7 @@
     color: #1e1b4b;
 }
 .footer__copy{
-    border-top: 4px darkblue solid;
+    border-top: 3px dotted darkblue;
     padding-top: 20px;
     width: 100%;
 }
