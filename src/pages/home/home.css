@@ -82,7 +82,7 @@
     color: #268703;
     gap: 15px;
 }
-@media only screen and (min-width:500px) and (max-width: 999px){
+@media only screen and (min-width:500px){
     .homeservices__container{
         display: flex;
         flex-wrap: wrap;
