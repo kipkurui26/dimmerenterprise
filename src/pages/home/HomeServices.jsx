@@ -2,7 +2,7 @@ import TestImage from "../../assets/bannerImage.jpeg";
 import { HashLink } from "react-router-hash-link";
 import { FaArrowRight } from "react-icons/fa6";
 
-const Services = () => {
+const HomeServices = () => {
   const serviceList = [
     {
       id: 1,
@@ -84,4 +84,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default HomeServices;
