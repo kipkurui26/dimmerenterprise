@@ -82,28 +82,25 @@
     color: #268703;
     gap: 15px;
 }
-/* @media only screen and (min-width:500px){
+@media only screen and (min-width:700px) and (max-width:999px){
     .homeservices__container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         flex-direction: unset;
+        justify-content: center;
     }
     .homeservices__service{
         width: 48%;
     }
 }
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width:1000px){
     .homeservices__container{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: unset;
         justify-content: center;
-        flex-direction: row;
     }
     .homeservices__service{
-        width: 30%;
+        width: 31%;
     }
-    .homeservices__service--title{
-        font-size: 1.3em;
-    }
-} */
+}
