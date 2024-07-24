@@ -78,6 +78,9 @@
     flex-direction: column;
 }
 .footer__content--title{
+    display: flex;
+    gap: 8px;
+    align-items: center;
     font-weight: bold;
     color: #1e1b4b;
     font-size: 1.05em;

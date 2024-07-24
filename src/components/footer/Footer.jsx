@@ -1,6 +1,8 @@
 import "./footer.css";
 import { subLinks, navItems } from "../navigation/NavList";
 import { HashLink } from "react-router-hash-link";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdOutlinePhoneCallback, MdMessage } from "react-icons/md";
 import {
   FaChevronRight,
   FaFacebookF,
@@ -90,19 +92,19 @@ const Footer = () => {
           <h2 className="footer__title">Reach Us</h2>
           <div className="footer__contact--col">
             <div className="footer__contact--content">
-              <span className="footer__content--title">Our Office</span>
+              <span className="footer__content--title"><FaLocationDot className="footer__content--icon"/> Our Office</span>
               <span className="footer__content--text">
                 Kabanas, Nairobi Kenya
               </span>
               <span className="footer__content--text">P.O. Box 3880-00506</span>
             </div>
             <div className="footer__contact--content">
-              <span className="footer__content--title">Call Us</span>
+              <span className="footer__content--title"><MdOutlinePhoneCallback className="footer__content--icon"/> Call Us</span>
               <span className="footer__content--text">0712 055 342</span>
               <span className="footer__content--text">0780 055 342</span>
             </div>
             <div className="footer__contact--content">
-              <span className="footer__content--title">Email Us</span>
+              <span className="footer__content--title"><MdMessage className="footer__content--icon"/> Email Us</span>
               <span className="footer__content--text">
                 dimmerenterprisesltd@yahoo.com
               </span>
