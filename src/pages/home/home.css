@@ -82,3 +82,28 @@
     color: #268703;
     gap: 15px;
 }
+@media only screen and (min-width:500px) and (max-width: 999px){
+    .homeservices__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: unset;
+    }
+    .homeservices__service{
+        width: 48%;
+    }
+}
+@media only screen and (min-width: 1000px){
+    .homeservices__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .homeservices__service{
+        width: 30%;
+    }
+    .homeservices__service--title{
+        font-size: 1.3em;
+    }
+}
