@@ -9,7 +9,7 @@ const HomeAbout = () => {
       <h2 className="homeabout__title">Discover Who We Are</h2>
       <div className="homeabout__content">
         <div className="homeabout__container">
-          <p className="homeabout__description">
+          <p className="homeabout__description first--para">
             Dimmer Enterprises Limited is a leading provider of comprehensive
             borehole water solutions in Kenya.
           </p>
