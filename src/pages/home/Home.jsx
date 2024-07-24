@@ -1,6 +1,7 @@
 import Banner from "../../components/banner/Banner";
 import Features from "../../components/features/Features";
 import "./home.css";
+import Services from "./Services";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         bannerButton={"Request a Quore"}
       />
       <Features />
+      <Services />
     </section>
   );
 };
