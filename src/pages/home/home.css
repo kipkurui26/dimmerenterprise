@@ -46,6 +46,7 @@
   justify-content: center;
 }
 .homeservices__figure--image {
+  aspect-ratio: 4/3;
   width: 100%;
 }
 .homeservices__service--title {
