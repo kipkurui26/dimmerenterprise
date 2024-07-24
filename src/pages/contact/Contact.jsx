@@ -13,7 +13,7 @@ const Contact = () => {
               <span className="contact__col--title">
                 <strong>Address</strong>
               </span>
-              <p className="contact__col--content">Malaa Center, Thika Road</p>
+              <p className="contact__col--content">Kabanas, Nairobi Kenya</p>
             </div>
             <div className="contact__map--col">
               <span className="contact__col--title">
