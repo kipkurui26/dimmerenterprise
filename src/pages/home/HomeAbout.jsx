@@ -1,3 +1,5 @@
+import TestImage from '../../assets/bannerImage.jpeg';
+
 const HomeAbout = () => {
   return (
     <section className="homeabout">
@@ -9,7 +11,7 @@ const HomeAbout = () => {
         </p>
       </div>
       <figure className="homeabout__figure">
-        
+        <img src={TestImage} alt="" />
       </figure>
     </section>
   );
