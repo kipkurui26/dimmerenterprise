@@ -8,7 +8,7 @@ const Services = () => {
       id: 1,
       title: "Hydrogeological Survey",
       content:
-        "We conduct detailed hydrogeological surveys to identify groundwater resources and ensure optimal borehole placement.",
+        "Conduct comprehensive hydrogeological surveys to identify groundwater resources, ensuring optimal placement for your boreholes and maximizing water extraction efficiency.",
       preview: TestImage,
       path: "/services#hydrogeological-survey",
     },
@@ -16,7 +16,7 @@ const Services = () => {
       id: 2,
       title: "Borehole Drilling",
       content:
-        "Expert borehole drilling services tailored for both residential and commercial needs.",
+        "Offering expert borehole drilling services, customized for both residential and commercial applications. Our precision drilling ensures a reliable water supply tailored to your specific needs.",
       preview: TestImage,
       path: "/services#borehole-drilling",
     },
@@ -24,7 +24,7 @@ const Services = () => {
       id: 3,
       title: "Camera Inspection",
       content:
-        "Our camera inspection services provide a clear view of your borehole’s condition, ensuring efficient maintenance.",
+        "Utilize advanced camera inspection technology to assess the condition of your boreholes. Our detailed inspections help maintain optimal performance and identify any issues early.",
       preview: TestImage,
       path: "/services#camera-inspection",
     },
@@ -32,7 +32,7 @@ const Services = () => {
       id: 4,
       title: "Test Pumping",
       content:
-        "We offer professional test pumping to assess groundwater yield and quality, critical for sustainable water management.",
+        "Providing professional test pumping services to evaluate groundwater yield and quality. This critical step ensures sustainable water management and accurate system sizing.",
       preview: TestImage,
       path: "/services#test-pumping",
     },
@@ -40,7 +40,7 @@ const Services = () => {
       id: 5,
       title: "Pump & Solar Installation",
       content:
-        "Specializing in the installation of pumps and solar systems, we provide energy-efficient solutions for your water needs.",
+        "Specialists in installing efficient pumps and solar power systems, we offer sustainable and cost-effective solutions for your water supply needs, reducing long-term energy costs.",
       preview: TestImage,
       path: "/services#pump-and-solar-installation",
     },
@@ -48,7 +48,7 @@ const Services = () => {
       id: 6,
       title: "Tank & Tower Construction",
       content:
-        "Our tank and tower construction services ensure robust and reliable water storage solutions.",
+        "Our robust tank and tower construction services provide secure and reliable water storage solutions, designed to meet the highest standards of durability and functionality.",
       preview: TestImage,
       path: "/services#tank-and-tower-construction",
     },
@@ -57,11 +57,9 @@ const Services = () => {
   return (
     <section className="homeservices">
       <div className="homeservices__header">
-        <h2 className="homeservices__title">Serving the Community</h2>
+        <h2 className="homeservices__title">Comprehensive Water Solutions</h2>
         <p className="homeservices__description">
-          Explore the comprehensive range of water solutions provided by Dimmer
-          Enterprises LTD, including hydrogeological surveys, borehole drilling,
-          and more.
+          Discover the extensive range of services offered by Dimmer Enterprises LTD, from detailed hydrogeological surveys to advanced borehole drilling and sustainable pump installations.
         </p>
       </div>
       <div className="homeservices__container">
@@ -77,8 +75,7 @@ const Services = () => {
             <h3 className="homeservices__service--title">{title}</h3>
             <p className="homeservices__service--content">{content}</p>
             <HashLink to={path} smooth className="homeservices__service--link">
-              Learn More{" "}
-              <FaArrowRight className="homeservices__service--icon" />
+              Learn More <FaArrowRight className="homeservices__service--icon" />
             </HashLink>
           </div>
         ))}
