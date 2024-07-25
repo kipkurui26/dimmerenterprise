@@ -1,0 +1,39 @@
+.about__overview{
+    padding: 30px 3%;
+}
+.about__overview--title{
+    text-align: center;
+    font-size: 1.7em;
+    color: #349b07;
+}
+.about__overview--span{
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    color: #174205;
+}
+.about__overview--title::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #257005;
+    margin: 20px auto;
+}
+.about__overview--text{
+    margin-top: 20px;
+    color: #091604;
+}
+.homeabout__list{
+    padding: 5px 3% 30px;
+}
+.homeabout__list-item{
+    list-style: none;
+    margin: 10px 0;
+}
+.homeabout__list-item strong{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #091604;
+}
