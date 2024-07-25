@@ -1,11 +1,18 @@
 import MiniBanner from "../../components/minibanner/MiniBanner";
+import BannerImage from '../../assets/water.jpeg';
 
 const About = () => {
   return (
     <section className="about">
-      <MiniBanner />
+      <MiniBanner  isAbout={true}
+      miniBannerContent={"Our commitment to quality and sustainability has earned us a reputation for excellence in the industry."}
+      breadcrumbTitle={"About Us"}
+      imageAlt={"About Dimmer Enterprises LTD Banner"}
+      imageImg={BannerImage}
+      
+      />
 
-      <ul className="homeabout__list">
+      {/* <ul className="homeabout__list">
         <li className="homeabout__list-item">
           <strong>Extensive Expertise:</strong> Over 10 years of industry
           experience in delivering reliable and efficient water solutions.
@@ -23,7 +30,7 @@ const About = () => {
           <strong>Community Commitment:</strong> Dedicated to improving access
           to clean water and supporting local communities.
         </li>
-      </ul>
+      </ul> */}
     </section>
   );
 };

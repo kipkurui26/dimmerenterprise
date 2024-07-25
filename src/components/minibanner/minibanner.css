@@ -87,6 +87,22 @@
     height: 100%;
     background: #f0c61e;
 }
+.minibar__content--learn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.minibanner__content--link{
+    text-decoration: none;
+    color: #fad542;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+.minibanner__content--link:hover{
+    color: #f0c61e;
+}
 @media only screen and (min-width:900px){
     .minibanner__content{
         max-width: 80%;
