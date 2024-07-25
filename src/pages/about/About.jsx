@@ -2,6 +2,7 @@ import MiniBanner from "../../components/minibanner/MiniBanner";
 import BannerImage from "../../assets/water.jpeg";
 import "./about.css";
 import { GiCheckMark } from "react-icons/gi";
+import Mission from "./Mission";
 
 const About = () => {
   const featuresList = [
@@ -60,19 +61,23 @@ const About = () => {
           </p>
         ))}
       </div>
-      <ul className="homeabout__list">
-        <span className="minibanner__content--title">
-          Why should you choose us?
-        </span>
-        {featuresList.map(({ id, text, title }) => (
-          <li className="homeabout__list-item" key={id}>
-            <strong>
-              <GiCheckMark className="homeabout__list--icon" /> {title}
-            </strong>{" "}
-            {text}
-          </li>
-        ))}
-      </ul>
+      <div className="about__content">
+          <span className="minibanner__content--title about__content--title">
+            Why should you choose us?
+          </span>
+        <ul className="homeabout__list">
+          {featuresList.map(({ id, text, title }) => (
+            <li className="homeabout__list-item" key={id}>
+              <strong>
+                <GiCheckMark className="homeabout__list--icon" /> {title}
+              </strong>{" "}
+              {text}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <Mission />
+      <div className="about__gallery"></div>
     </section>
   );
 };

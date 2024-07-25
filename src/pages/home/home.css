@@ -139,15 +139,6 @@
   color: #082f49;
   padding-bottom: 8px;
 }
-.first--para:first-child::first-letter {
-    float: left;
-    font-size: 2em;
-    line-height: 1.0;
-    margin-right: 0.1em;
-    font-weight: 600;
-    color: #f0bb30;
-}
-
 .homeabout__link {
   display: flex;
   color: #082f49;
