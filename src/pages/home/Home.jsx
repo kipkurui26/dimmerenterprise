@@ -1,4 +1,5 @@
 import Banner from "../../components/banner/Banner";
+import ContactForm from "../../components/contact_form/ContactForm";
 import Features from "../../components/features/Features";
 import "./home.css";
 import HomeAbout from "./HomeAbout";
@@ -19,6 +20,7 @@ const Home = () => {
       <HomeAbout />
       <Features />
       <HomeServices />
+      <ContactForm />
     </section>
   );
 };
