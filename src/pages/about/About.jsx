@@ -1,5 +1,6 @@
 import MiniBanner from "../../components/minibanner/MiniBanner";
 import BannerImage from "../../assets/water.jpeg";
+import TestImage from "../../assets/image1.jpg";
 import "./about.css";
 import { GiCheckMark } from "react-icons/gi";
 import Mission from "./Mission";
@@ -56,16 +57,29 @@ const About = () => {
           <span className="about__overview--span">Dimmer</span> Enterprises
           Limited
         </h1>
-        {paragraphText.map(({ id, text }) => (
-          <p className="about__overview--text" key={id}>
-            {text}
-          </p>
-        ))}
+        <div className="about__container">
+          <div className="about__overview--col">
+            {paragraphText.map(({ id, text }) => (
+              <p className="about__overview--text" key={id}>
+                {text}
+              </p>
+            ))}
+          </div>
+          <figure className="about__figure">
+            <img
+              className="about__figure--image"
+              src={TestImage}
+              alt="About Dimmer Enterprises LTD"
+            />
+          </figure>
+        </div>
       </div>
+
+              <Mission />
       <div className="about__content">
-          <span className="minibanner__content--title about__content--title">
-            Why should you choose us?
-          </span>
+        <span className="minibanner__content--title about__content--title">
+          Why should you choose us?
+        </span>
         <ul className="homeabout__list">
           {featuresList.map(({ id, text, title }) => (
             <li className="homeabout__list-item" key={id}>
@@ -78,7 +92,6 @@ const About = () => {
         </ul>
       </div>
       <Appointment />
-      <Mission />
       <div className="about__gallery"></div>
     </section>
   );

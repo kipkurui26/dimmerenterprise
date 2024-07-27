@@ -1,6 +1,12 @@
 .about__overview {
   padding: 30px 3%;
 }
+.about__figure {
+  width: 100%;
+}
+.about__figure--image {
+  width: 100%;
+}
 .about__overview--title {
   text-align: center;
   font-size: 1.7em;
@@ -32,6 +38,18 @@
   color: #091604;
 }
 @media only screen and (min-width: 800px) {
+  .about__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+  }
+  .about__overview--col {
+    width: 60%;
+  }
+  .about__figure {
+    width: 40%;
+  }
   .homeabout__list {
     display: flex;
     justify-content: center;
@@ -60,7 +78,7 @@
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 5px;
-  background: #312e81;
+  background: #3c3a6f;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -76,7 +94,7 @@
   width: 40px;
   height: 40px;
   background: #312e81;
-  bottom: -12px;
+  bottom: -19px;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
 }
@@ -84,13 +102,13 @@
   font-size: 2em;
   color: #fff;
 }
-.mission__header--title{
-    color: #fff;
-    font-size: 1.2em;
-    display: none;    
+.mission__header--title {
+  color: #fff;
+  font-size: 1.2em;
+  display: none;
 }
-.mission__header--title.current__index{
-    display: block;
+.mission__header--title.current__index {
+  display: block;
 }
 .mission__container--content {
   position: relative;
@@ -106,20 +124,23 @@
   font-size: 1.8em;
   color: #312e81;
 }
-.mission__container--text{
-    color: #050435;
+.mission__container--text {
+  color: #050435;
 }
-.mission__container--list{
-    list-style: none;
+.mission__container--list {
+  list-style: none;
 }
-.mission__container--items{
-    margin: 5px 0;
+.mission__container--items {
+  margin: 5px 0;
 }
 @media only screen and (min-width: 800px) {
-    .mission{
-        width: 80%;
-        margin: 0 auto;
-    }
+  .mission {
+    width: 100%;
+  }
+  .mission > div {
+    margin: 0 auto;
+    width: 80%;
+  }
   .mission__header--col {
     width: 20%;
     display: flex;
