@@ -1,5 +1,5 @@
 import "./appointment.css";
-import WaterImage from '../../assets/water.jpeg'
+import WaterImage from '../../assets/water-is-life.jpg'
 import { Link } from "react-router-dom";
 import { FaRegHandPointRight } from "react-icons/fa6";
 
