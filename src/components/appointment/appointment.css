@@ -1,0 +1,76 @@
+.appointment {
+    width: 100%;
+    position: relative;
+}
+.appointment__figure {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+}
+.appointment__figure--image {
+    width: 100%;
+    height: 100%;
+}
+.appointment__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.appointment__content--title {
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    padding: 10px 0 30px;
+}
+.appointment__content--text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+}
+.appointment__content--link {
+    color: #edca02;
+}
+.appointment__content--link:hover {
+    color: #FFD700;
+}
+.appointment__content--sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+}
+.appointment__content--buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.appointment__button {
+    padding: 6px 10px;
+    background-color: #FFD700; 
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+.appointment__button:hover {
+    background: #FF8C00; 
+}
+.appointment__button:nth-child(2) {
+    background: #e9e8e8c4;
+    color: #155e75;
+}
+.appointment__button:nth-child(2):hover {
+    background: #b6b6b6;
+}

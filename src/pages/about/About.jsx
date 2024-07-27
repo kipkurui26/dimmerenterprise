@@ -3,6 +3,7 @@ import BannerImage from "../../assets/water.jpeg";
 import "./about.css";
 import { GiCheckMark } from "react-icons/gi";
 import Mission from "./Mission";
+import Appointment from "../../components/appointment/Appointment";
 
 const About = () => {
   const featuresList = [
@@ -76,6 +77,7 @@ const About = () => {
           ))}
         </ul>
       </div>
+      <Appointment />
       <Mission />
       <div className="about__gallery"></div>
     </section>
