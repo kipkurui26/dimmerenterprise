@@ -5,6 +5,7 @@ import "./about.css";
 import { GiCheckMark } from "react-icons/gi";
 import Mission from "./Mission";
 import Appointment from "../../components/appointment/Appointment";
+import Faqs from "../../components/faqs/Faqs";
 
 const About = () => {
   const featuresList = [
@@ -92,6 +93,7 @@ const About = () => {
         </ul>
       </div>
       <Appointment />
+      <Faqs />
       <div className="about__gallery"></div>
     </section>
   );
