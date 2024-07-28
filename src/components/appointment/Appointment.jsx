@@ -15,7 +15,7 @@ const Appointment = () => {
         </h2>
         <p className="appointment__content--text">
           <strong>Click Here <FaRegHandPointRight/></strong>{" "}
-          <Link className="appointment__content--link" to={"https://wa.me/254727637947"}>+254727637947</Link>
+          <Link className="appointment__content--link" to={"https://wa.me/254712055342"}>+254712055342</Link>
         </p>
         <div className="appointment__content--sub">
           <span className="appointment__content--text">
