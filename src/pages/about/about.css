@@ -63,7 +63,8 @@
 /* Mission Styles */
 .mission {
   padding: 30px 3%;
-  background: #fae4848a;
+  /* background: #fae4848a; */
+  background: #082f4922;
   margin: 10px 0 30px;
 }
 .mission__header {
