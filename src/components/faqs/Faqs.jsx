@@ -1,7 +1,12 @@
+import { useState } from "react";
 import "./faqs.css";
-import { FaChevronRight } from "react-icons/fa";
+import { FaChevronRight, FaChevronUp } from "react-icons/fa";
 
 const Faqs = () => {
+  const [currentIndex, setCurrentIndex] = useState(1);
+  const toggleAccordion = (index) => {
+    setCurrentIndex(index);
+  };
   const faqList = [
     {
       id: 1,
@@ -41,14 +46,24 @@ const Faqs = () => {
       <h2 className="faqs__title">Frequently Asked Questions</h2>
       <div className="faqs__container">
         {faqList.map(({ id, question, answer }) => (
-          <div className="faqs__content" key={id}>
+          <div
+            className="faqs__content"
+            key={id}
+            onClick={() => toggleAccordion(id)}
+          >
             <div className="faqs__content--q">
               <span className="faqs__content--title">{question}</span>{" "}
-              <FaChevronRight className="faqs__content--icon" />
+              {currentIndex === id ? (
+                  <FaChevronUp className="faqs__content--icon" />
+            ) : (
+                <FaChevronRight className="faqs__content--icon" />
+                )}
             </div>
-            <div className="faqs__content--a">
-              <span className="faqs__content--text">{answer}</span>
-            </div>
+            {currentIndex === id && (
+              <div className="faqs__content--a">
+                <span className="faqs__content--text">{answer}</span>
+              </div>
+            )}
           </div>
         ))}
       </div>

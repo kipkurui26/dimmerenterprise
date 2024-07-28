@@ -33,7 +33,9 @@
     font-weight: 600;
     margin-bottom: 10px;
 }
-
+.faqs__content--title{
+    width: 95%;
+}
 .faqs__content--icon{
     font-size: 1.3em;
 }
