@@ -63,7 +63,6 @@
 /* Mission Styles */
 .mission {
   padding: 30px 3%;
-  /* background: #fae4848a; */
   background: #082f4922;
   margin: 10px 0 30px;
 }
@@ -94,7 +93,7 @@
   z-index: -2;
   width: 40px;
   height: 40px;
-  background: #312e81;
+  background: #082f4968;
   bottom: -19px;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);

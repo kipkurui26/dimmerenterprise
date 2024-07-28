@@ -4,8 +4,9 @@ import { FaChevronRight, FaChevronUp } from "react-icons/fa";
 
 const Faqs = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
+  
   const toggleAccordion = (index) => {
-    setCurrentIndex(index);
+    setCurrentIndex(currentIndex === index ? null : index);
   };
   const faqList = [
     {
