@@ -18,6 +18,7 @@
     gap: 10px;
 }
 .faqs__content{
+    width: 100%;
     background: #082f4922;
     padding: 10px 5px;
     border-radius: 5px;
@@ -45,4 +46,10 @@
     color: #fff;
     border-radius: 5px;
     width: 100%;
+}
+@media only screen and (min-width:800px){
+    .faqs__container{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
