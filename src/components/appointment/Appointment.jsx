@@ -27,7 +27,7 @@ const Appointment = () => {
           <span className="appointment__content--text">Mon - Sat: 8:00 AM - 5:00 PM</span>
         </div>
         <div className="appointment__content--buttons">
-          <Link to={"https://wa.me/254727637947"} className="appointment__button">
+          <Link to={"https://wa.me/254712055342"} className="appointment__button">
             Chat Now
           </Link>
           <Link to={"#"} className="appointment__button">
