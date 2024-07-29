@@ -193,7 +193,7 @@
 }
 .equipments__figure--image{
   width: 100%;
-  /* max-height: 200px; */
+  aspect-ratio: 16/9;
   object-fit: cover;
 }
 .equipments__container{
