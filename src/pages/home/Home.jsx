@@ -1,5 +1,6 @@
 import Banner from "../../components/banner/Banner";
 import ContactForm from "../../components/contact_form/ContactForm";
+import Faqs from "../../components/faqs/Faqs";
 import Features from "../../components/features/Features";
 import "./home.css";
 import HomeAbout from "./HomeAbout";
@@ -21,6 +22,7 @@ const Home = () => {
       <Features />
       <HomeServices />
       <ContactForm />
+      <Faqs />
     </section>
   );
 };
