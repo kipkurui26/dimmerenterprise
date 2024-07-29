@@ -212,3 +212,19 @@
   padding: 10px 0;
   font-size: 1.3em;
 }
+@media only screen and (min-width: 800px){
+  .equipments__container{    
+    display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .equipments__equipment{
+    width: 48%;
+  }
+}
+@media only screen and (min-width: 1000px){
+  .equipments__equipment{
+    width: 40%;     
+  }
+}
