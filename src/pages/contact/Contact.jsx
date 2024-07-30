@@ -1,6 +1,6 @@
 import ContactForm from "../../components/contact_form/ContactForm";
 import MiniBanner from "../../components/minibanner/MiniBanner";
-import BannerImage from "../../assets/water.jpeg";
+import BannerImage from "../../assets/water-is-life.jpg";
 import "./contact.css";
 
 const Contact = () => {

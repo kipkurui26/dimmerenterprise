@@ -6,7 +6,7 @@ import Camera from "./Camera";
 import TestPumping from "./TestPumping";
 import PumpSolar from "./PumpSolar";
 import TowerConstruction from "./TowerConstruction";
-import waterImageBanner from "../../assets/water.jpeg";
+import waterImageBanner from "../../assets/water-is-life.jpg";
 import MiniBanner from "../../components/minibanner/MiniBanner";
 
 const Services = () => {
