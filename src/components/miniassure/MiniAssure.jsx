@@ -1,9 +1,10 @@
 import "./miniassure.css";
+import miniVideo from "../../assets/miniVideo.mp4";
+import miniVideoPoster from "../../assets/miniVideoPoster.png";
 
 const MiniAssure = () => {
   return (
     <section className="miniassure">
-      <div className="miniassure__figure"></div>
       <div className="miniassure__container">
         <h2 className="miniassure__title">Serving The Community</h2>
         <p className="miniassure__text">
@@ -31,6 +32,18 @@ const MiniAssure = () => {
           generations.
         </div>
       </div>
+      <figure className="miniassure__figure">
+        <video
+          className="miniassure__video"
+          controls
+          preload="metadata"
+          poster={miniVideoPoster}
+          muted
+        >
+          <source src={miniVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </figure>
     </section>
   );
 };
