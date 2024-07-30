@@ -7,7 +7,6 @@ import Faqs from "../../components/faqs/Faqs";
 import Overview from "./Overview";
 import WhyUs from "./WhyUs";
 import Equipments from "./Equipments";
-// import MiniAssure from "../../components/miniassure/MiniAssure";
 
 const About = () => {
   return (
