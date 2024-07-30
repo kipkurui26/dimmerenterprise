@@ -35,3 +35,19 @@
 .miniassure__cta:hover {
   background-color: #0056b3;
 }
+@media only screen and (min-width:800px){
+    .miniassure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .miniassure__container{
+        width:55%;
+    }
+    .miniassure__figure{
+        width: 40%;
+    }
+    .miniassure__video{
+        max-height: 500px;
+    }
+}
