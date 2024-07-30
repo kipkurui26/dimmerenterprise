@@ -2,6 +2,7 @@ import Banner from "../../components/banner/Banner";
 import ContactForm from "../../components/contact_form/ContactForm";
 import Faqs from "../../components/faqs/Faqs";
 import Features from "../../components/features/Features";
+import MiniAssure from "../../components/miniassure/MiniAssure";
 import "./home.css";
 import HomeAbout from "./HomeAbout";
 import HomeServices from "./HomeServices";
@@ -21,6 +22,7 @@ const Home = () => {
       <HomeAbout />
       <Features />
       <HomeServices />
+      <MiniAssure />
       <ContactForm />
       <Faqs />
     </section>
