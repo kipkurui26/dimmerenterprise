@@ -1,0 +1,16 @@
+.miniassure{
+    padding: 30px 3%;
+}
+.miniassure__title{
+    font-size: 1.4em;
+    color: #082f49;
+    padding-bottom: 10px;
+}
+.miniassure__text{
+    /* font-size: 0.9em; */
+    color: #082f49;
+    padding-bottom: 8px;
+}
+.miniassure__cta{
+    color: #312e81;
+}
