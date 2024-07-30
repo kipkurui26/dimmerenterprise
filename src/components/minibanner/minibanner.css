@@ -109,14 +109,9 @@
     margin: 0 auto;
   }
 }
-/* CSS for the services section */
-.services > div {
-  transition: opacity 1s ease-in-out;
+.services-banner{
+  display: none;
 }
-.services > div:not([style*="display: block"]) {
-  opacity: 0;
-  pointer-events: none;
-}
-.services > div[style*="display: block"] {
-  opacity: 1;
+.services-banner.visible{
+  display: block;
 }
