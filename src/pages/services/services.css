@@ -1,48 +1,159 @@
-.textcomponent{
-    background: #e2e1e7;
-    padding: 30px 3%;
+.survey {
+  background: #e2e1e7;
 }
-.textcomponent__title{
-    position: relative;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #082f49;
-    margin-bottom: 1.7rem;
+.textcomponent {
+  background: #e2e1e7;
+  padding: 30px 3%;
 }
-.textcomponent__title::after{
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 70px;
-    height: 3px;
-    background: #f9a826;
+.textcomponent__title {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #082f49;
+  margin-bottom: 1.7rem;
 }
-.textcomponent__text{
-    color: #021420;
-    padding-bottom: 10px;
+.textcomponent__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: #f9a826;
 }
-.textcomponent__list{
-    color: #021420;
-    padding-left: 20px;
+.textcomponent__text {
+  color: #021420;
+  padding-bottom: 10px;
 }
-.textcomponent__list--item{
-    padding-bottom: 8px;
+.textcomponent__list {
+  color: #021420;
+  padding-left: 20px;
 }
-/* .gallerycomponent__figure{
-    
-} */
-.gallerycomponent__figure--image{
-    width: 100%;
+.textcomponent__list--item {
+  padding-bottom: 8px;
 }
-.gallerycomponent__slide{
-    overflow: auto;
-    width: 100%;
+.gallerycomponent__figure--image {
+  width: 100%;
+}
+.gallerycomponent__slide {
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+}
+.gallerycomponent__slide--image {
+  width: 60px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .survey {
     display: flex;
-    justify-content: center;
-    gap: 9px;
+    justify-content: space-between;
+  }
+  .gallerycomponent {
+    padding-top: 70px;
+    float: right;
+    width: 40%;
+    margin-right: 20px;
+  }
+  .textcomponent {
+    width: 58%;
+  }
 }
-.gallerycomponent__slide--image{
-    width: 60px;
-    cursor: pointer;
+
+/* Drilling service */
+.drilling__container {
+  padding: 40px 3% 10px;
+}
+.boreholeDrillingComponent__title {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #082f49;
+  margin-bottom: 1.7rem;
+  padding-left: 20px;
+}
+.boreholeDrillingComponent__title::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 10px;
+  background: #f9a826;
+  left: 0;
+  top: 0;
+}
+.boreholeDrillingComponent__title::before {
+  position: absolute;
+  content: "";
+  width: 40%;
+  height: 1px;
+  background: #979189;
+  left: 0;
+}
+.drilling__figure {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+.drilling__video {
+  width: 100%;
+  max-height: 500px;
+}
+.drilling__video--content {
+  width: 100%;
+  height: 500px;
+}
+.drilling__image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0 10px;
+}
+.drilling__image--content {
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.drilling__image--content:hover {
+  transform: scale(1.1);
+}
+
+.zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.zoom-image {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.drilling__cross {
+  margin: 0 auto 30px;
+  width: 60%;
+  padding: 1px;
+  background: #979189;
+}
+@media only screen and (min-width: 800px) {
+  .drilling__content {
+    display: flex;
+  }
+  .drilling__video {
+    height: 450px;
+  }
+  .drilling__video--content {
+    height: 100%;
+  }
 }
