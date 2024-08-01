@@ -35,6 +35,9 @@
 .gallerycomponent__figure--image {
   width: 100%;
 }
+.gallerycomponent{
+    padding-bottom: 30px;
+}
 .gallerycomponent__slide {
   overflow: auto;
   width: 100%;
@@ -82,14 +85,6 @@
   background: #f9a826;
   left: 0;
   top: 0;
-}
-.boreholeDrillingComponent__title::before {
-  position: absolute;
-  content: "";
-  width: 40%;
-  height: 1px;
-  background: #979189;
-  left: 0;
 }
 .drilling__figure {
   width: 100%;
@@ -141,7 +136,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .drilling__cross {
-  margin: 0 auto 30px;
+  margin: 30px auto 50px;
   width: 60%;
   padding: 1px;
   background: #979189;
@@ -149,11 +144,125 @@
 @media only screen and (min-width: 800px) {
   .drilling__content {
     display: flex;
+    align-items: center;
+  }
+  .drilling__container{
+    width: 60%;
+  }
+  .drilling__figure{
+    width: 35%;
   }
   .drilling__video {
     height: 450px;
   }
   .drilling__video--content {
     height: 100%;
+  }
+}
+/* Camera Styling */
+.camera{
+  background: #dddddf96;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.camera__container {
+  padding: 40px 3% 10px;
+}
+@media only screen and (min-width: 786px){
+  .camera{
+    padding-left: 20px;
+    flex-direction: unset;
+  }
+}
+
+/* Test Pumping Styling */
+.testpumping {
+  background: #f0f0f0; /* Light grey background */
+  padding: 30px 3%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.testpumping__content {
+  background: #ffffff;
+  padding: 20px 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testpumping__header {
+  margin-bottom: 20px;
+}
+
+.testpumpingComponent__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #082f49;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.testpumpingComponent__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: #f9a826;
+}
+
+.textcomponent__intro,
+.textcomponent__text {
+  color: #021420;
+  margin-bottom: 10px;
+}
+
+.testpumping__steps-title,
+.testpumping__benefits-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #082f49;
+  margin-bottom: 10px;
+}
+
+.testpumping__steps,
+.testpumping__benefits {
+  margin-bottom: 20px;
+}
+
+.textcomponent__list {
+  padding-left: 20px;
+  color: #021420;
+}
+
+.textcomponent__list--item {
+  margin-bottom: 8px;
+}
+
+.testpumping__visual {
+  margin-top: 20px;
+  /* Add styles for visual elements if needed */
+}
+
+.testpumping__cross {
+  margin: 30px auto;
+  width: 60%;
+  height: 1px;
+  background: #cccccc;
+}
+
+/* Larger screen adjustments */
+@media only screen and (min-width: 768px) {
+  .testpumping {
+    flex-direction: unset;
+    padding: 40px 5%;
+  }
+
+  .testpumping__content {
+    width: 60%;
+    margin-right: 5%;
+    box-shadow: none;
+    background: none;
   }
 }
