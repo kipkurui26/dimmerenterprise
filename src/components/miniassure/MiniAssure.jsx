@@ -6,7 +6,10 @@ const MiniAssure = () => {
   return (
     <section className="miniassure">
       <div className="miniassure__container">
-        <h2 className="miniassure__title">Serving The Community</h2>
+        <h2 className="miniassure__title">
+          <span className="miniassure__title--block"></span>Serving The
+          Community
+        </h2>
         <p className="miniassure__text">
           At Dimmer Enterprises LTD, we are dedicated to providing clean,
           reliable water and uplifting our communities. Our high-quality

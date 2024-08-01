@@ -47,7 +47,7 @@ const Services = () => {
     },
     {
       id: 5,
-      breadcrumbTitle: "Pump and Solar Installation Services",
+      breadcrumbTitle: "Pump & Solar Installation Services",
       miniBannerContent:
         "Efficient pump and solar installations for sustainable and cost-effective water supply solutions.",
       imageAlt: "Pump and Solar Installation Dimmer Enterprises LTD Banner",

@@ -1,0 +1,48 @@
+.textcomponent{
+    background: #e2e1e7;
+    padding: 30px 3%;
+}
+.textcomponent__title{
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #082f49;
+    margin-bottom: 1.7rem;
+}
+.textcomponent__title::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 70px;
+    height: 3px;
+    background: #f9a826;
+}
+.textcomponent__text{
+    color: #021420;
+    padding-bottom: 10px;
+}
+.textcomponent__list{
+    color: #021420;
+    padding-left: 20px;
+}
+.textcomponent__list--item{
+    padding-bottom: 8px;
+}
+/* .gallerycomponent__figure{
+    
+} */
+.gallerycomponent__figure--image{
+    width: 100%;
+}
+.gallerycomponent__slide{
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+}
+.gallerycomponent__slide--image{
+    width: 60px;
+    cursor: pointer;
+}
