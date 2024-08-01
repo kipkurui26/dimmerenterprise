@@ -22,15 +22,7 @@
   margin-bottom: 20px;
   gap: 10px;
 }
-.miniassure__title::before{
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  height: 2px;
-  width: 50%;
-  background: #0056b3;
-}
+
 .miniassure__title--block{
   position: absolute;
   left: 0;
