@@ -266,3 +266,135 @@
     background: none;
   }
 }
+
+/* Pump and Solar */
+.pumpsolar {
+  background: #e8f0f2;
+  padding: 40px 3%;
+}
+
+.pump-solar__container {
+  margin-bottom: 30px;
+}
+
+.pumpSolarComponent__title {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #05445E;
+  margin-bottom: 1.7rem;
+  padding-left: 20px;
+}
+
+.pumpSolarComponent__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: #189AB4;
+}
+
+.textcomponent__intro {
+  color: #082f49;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.pump-solar__sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pump-solar__section {
+  background: #ffffff;
+  border: 1px solid #cdd0d4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.pump-solar__section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #05445E;
+  margin-bottom: 10px;
+}
+
+.textcomponent__text {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.textcomponent__list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.textcomponent__list--item {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.pump-solar__gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.pump-solar__image,
+.pump-solar__preview--image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.pump-solar__image:hover,
+.pump-solar__preview--image:hover {
+  transform: scale(1.1);
+}
+
+.pump-solar__cross {
+  margin: 30px auto 50px;
+  width: 60%;
+  padding: 1px;
+  background: #979189;
+}
+
+/* Responsive Styling */
+@media only screen and (min-width: 800px) {
+  .pumpsolar{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .pump-solar__container {
+    width: 55%;
+  }
+  .pump-solar__sections {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .pump-solar__section {
+    flex: 1;
+  }
+
+  .pump-solar__gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    /* margin-top: 100px; */
+  }
+  .pump-solar__image{
+    object-fit: contain;
+    width: 350px;
+    height: auto;
+  }
+}

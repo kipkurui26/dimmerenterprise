@@ -1,4 +1,4 @@
-import TestImage from "../../assets/image1.jpg";
+import aboutBanner from "../../assets/aboutBanner.jpeg";
 
 const Overview = () => {
   const paragraphText = [
@@ -17,10 +17,6 @@ const Overview = () => {
   ];
   return (
     <div className="about__overview">
-      {/* <h1 className="about__overview--title">
-        <span className="about__overview--span">Dimmer</span> Enterprises
-        Limited
-      </h1> */}
       <div className="about__container">
         <div className="about__overview--col">
           {paragraphText.map(({ id, text }) => (
@@ -32,7 +28,7 @@ const Overview = () => {
         <figure className="about__figure">
           <img
             className="about__figure--image"
-            src={TestImage}
+            src={aboutBanner}
             alt="About Dimmer Enterprises LTD"
           />
         </figure>
