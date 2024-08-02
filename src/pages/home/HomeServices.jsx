@@ -1,4 +1,6 @@
 import TestImage from "../../assets/bannerImage.jpeg";
+import SurveyImage from '../../assets/surveykit.jpg'
+import DrillingImage from '../../assets/image1.jpg'
 import { HashLink } from "react-router-hash-link";
 import { FaArrowRight } from "react-icons/fa6";
 
@@ -9,7 +11,7 @@ const HomeServices = () => {
       title: "Hydrogeological Survey",
       content:
         "Conduct comprehensive hydrogeological surveys to identify groundwater resources, ensuring optimal placement for your boreholes and maximizing water extraction efficiency.",
-      preview: TestImage,
+      preview: SurveyImage,
       path: "/services#hydrogeological-survey",
     },
     {
@@ -17,7 +19,7 @@ const HomeServices = () => {
       title: "Borehole Drilling",
       content:
         "Offering expert borehole drilling services, customized for both residential and commercial applications. Our precision drilling ensures a reliable water supply tailored to your specific needs.",
-      preview: TestImage,
+      preview: DrillingImage,
       path: "/services#borehole-drilling",
     },
     {

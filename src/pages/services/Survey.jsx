@@ -1,37 +1,17 @@
-import GalleryComponent from "./GalleryComponent"
+import pumpImage1 from '../../assets/water.jpeg'; 
+import pumpImage2 from '../../assets/aboutBanner.jpeg';
 import TextComponent from "./TextComponent"
-import TestImage1 from "../../assets/water-is-life.jpg";
-import TestImage2 from "../../assets/bannerImage.jpeg";
-import TestImage3 from "../../assets/landing.jpg";
+
 
 
 const Survey = () => {
-  const imageList = [
-    {
-      id: 1,
-      src: TestImage1,
-      alt: "Water is life"
-    },
-    {
-      id: 2,
-      src: TestImage2,
-      alt: "Banner"
-    },
-    {
-      id: 3,
-      src: TestImage3,
-      alt: "Banner"
-    },
-    {
-      id: 4,
-      src: TestImage2,
-      alt: "Banner"
-    },
-  ];
   return (
     <section className="survey" id="hydrogeological-survey">
       <TextComponent />
-      <GalleryComponent imageList={imageList}/>
+      <div className="pump-solar__figure">
+        <img src={pumpImage1} alt="Water is life" className="pump-solar__figure--image"/>
+        <img src={pumpImage2} alt="Banner" className="pump-solar__figure--image"/>
+      </div>
     </section>
   )
 }

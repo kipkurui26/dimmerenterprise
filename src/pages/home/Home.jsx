@@ -6,10 +6,26 @@ import MiniAssure from "../../components/miniassure/MiniAssure";
 import "./home.css";
 import HomeAbout from "./HomeAbout";
 import HomeServices from "./HomeServices";
+import MetaTags from '../../components/metas/MetaTags'
 
-const Home = () => {
+const Home = () => {  
+  const canonicalUrl = "https://dimmerenterprises.co.ke"
+  const metaTags = [
+    {
+      metaName: "description",
+      metaContent: "Dimmer Enterprises Ltd: Leading drilling experts in Kenya. Hydrogeological surveys, borehole drilling, solar installations & more. Contact us today!",
+    }
+  ]
+
   return (
     <section className="home">
+      {/* Meta Tags */}
+      <MetaTags
+        title={"Dimmer Enterprises Limited | Borehole Drilling Company in Kenya"}
+        metaTags={metaTags}
+        canonicalUrl={canonicalUrl}
+      />
+
       <Banner
         isSpan={true}
         bannerSpan={"Your One Stop Solution"}

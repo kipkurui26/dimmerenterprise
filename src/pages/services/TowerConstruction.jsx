@@ -1,29 +1,42 @@
-import TestImage1 from "../../assets/water-is-life.jpg";
-import TestImage2 from "../../assets/bannerImage.jpeg";
-import TestImage3 from "../../assets/landing.jpg";
+import tankTower1 from '../../assets/tank-tower1.webp'
+import tankTower2 from '../../assets/tank-tower2.webp'
+import tankTower3 from '../../assets/tank-tower3.webp'
+import tankTower4 from '../../assets/tank-tower4.webp'
+import tankTower5 from '../../assets/tank-tower5.webp'
+import tankTower6 from '../../assets/tank-tower6.webp'
 import GalleryComponent from "./GalleryComponent"
 
 const TowerConstruction = () => {
   const imageList = [
     {
       id: 1,
-      src: TestImage1,
-      alt: "Water is life"
+      src: tankTower1,
+      alt: "Elevated Tank Tower Construction 1"
     },
     {
       id: 2,
-      src: TestImage2,
-      alt: "Banner"
+      src: tankTower2,
+      alt: "Elevated Tank Tower Construction 2"
     },
     {
       id: 3,
-      src: TestImage3,
-      alt: "Banner"
+      src: tankTower3,
+      alt: "Elevated Tank Tower Construction 3"
     },
     {
       id: 4,
-      src: TestImage2,
-      alt: "Banner"
+      src: tankTower4,
+      alt: "Elevated Tank Tower Construction 4"
+    },
+    {
+      id: 5,
+      src: tankTower5,
+      alt: "Elevated Tank Tower Construction 5"
+    },
+    {
+      id: 6,
+      src: tankTower6,
+      alt: "Elevated Tank Tower Construction 6"
     },
   ];
   return (

@@ -1,4 +1,4 @@
-import TestImage from "../../assets/bannerImage.jpeg";
+import aboutBanner from "../../assets/aboutBanner.jpeg";
 import { HashLink } from "react-router-hash-link";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -31,7 +31,7 @@ const HomeAbout = () => {
         <figure className="homeabout__figure">
           <img
             className="homeabout__figure--image"
-            src={TestImage}
+            src={aboutBanner}
             alt="About image Dimmer Enterpeises LTD"
           />
         </figure>

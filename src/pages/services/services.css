@@ -39,10 +39,12 @@
     padding-bottom: 30px;
 }
 .gallerycomponent__slide {
-  overflow: auto;
+  margin-top: 15px;
+  padding: 0 10px;
   width: 100%;
+  overflow: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 9px;
 }
 .gallerycomponent__slide--image {

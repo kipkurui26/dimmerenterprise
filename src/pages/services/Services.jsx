@@ -9,8 +9,15 @@ import TowerConstruction from "./TowerConstruction";
 import waterImageBanner from "../../assets/water-is-life.jpg";
 import MiniBanner from "../../components/minibanner/MiniBanner";
 import Appointment from '../../components/appointment/Appointment'
+import MetaTags from "../../components/metas/MetaTags";
 
 const Services = () => {
+  const canonicalUrl = "https://dimmerenterprises.co.ke/services";
+  const metaTags = [{
+    metaName: "description",
+    metaContent: "Dimmer Enterprises Ltd offers expert hydrogeological surveys, borehole drilling, pump installations, and more. Discover our full range of services."
+  }]
+
   const [currentBanner, setCurrentBanner] = useState(0);
 
   const servicesList = [
@@ -75,6 +82,14 @@ const Services = () => {
 
   return (
     <section className="services">
+            {/* Meta Tags */}
+            <MetaTags
+        title={
+          "Our Services - Dimmer Eneterprises Limited"
+        }
+        metaTags={metaTags}
+        canonicalUrl={canonicalUrl}
+      />
       <div className="services-banner-wrapper">
         {servicesList.map((service, index) => (
           <div

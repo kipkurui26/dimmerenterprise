@@ -1,14 +1,35 @@
-import pumpImage1 from '../../assets/water.jpeg'; 
-import pumpImage2 from '../../assets/aboutBanner.jpeg';
+import GalleryComponent from './GalleryComponent'
+import solarImage1 from '../../assets/solar-image1.webp'
+import solarImage2 from '../../assets/solar-image2.webp'
+import solarImage3 from '../../assets/solar-image3.webp'
+import solarImage4 from '../../assets/solar-image4.webp'
 
 const PumpSolar = () => {
+  const imageList = [
+    {
+      id: 1,
+      src: solarImage1,
+      alt: "Borehole Solar Installation"
+    },
+    {
+      id: 3,
+      src: solarImage3,
+      alt: "Borehole Solar Installation 3"
+    },
+    {
+      id: 2,
+      src: solarImage2,
+      alt: "Borehole Solar Installation 2"
+    },
+    {
+      id: 4,
+      src: solarImage4,
+      alt: "Borehole Solar Installation 4"
+    },
+  ];
   return (
     <section className="pumpsolar" id="pump-and-solar-installation">
-      {/* <GalleryComponent imageList={imageList}/> */}
-      <div className="pump-solar__figure">
-        <img src={pumpImage1} alt="Water is life" className="pump-solar__figure--image"/>
-        <img src={pumpImage2} alt="Banner" className="pump-solar__figure--image"/>
-      </div>
+      <GalleryComponent imageList={imageList}/>
       <div className="pump-solar__container">
         <h2 className="pumpSolarComponent__title">Pump and Solar Installation</h2>
         <p className="textcomponent__intro">

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import testVideo from "../../assets/miniVideo.mp4";
+import drillingVideo from "../../assets/drilling-video1.mp4";
 import testImage1 from "../../assets/image1.jpg";
 import textImage2 from "../../assets/surveykit.jpg";
 
@@ -78,7 +78,7 @@ const Drilling = () => {
               autoPlay
               loop
             >
-              <source src={testVideo} type="video/mp4" />
+              <source src={drillingVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

@@ -1,4 +1,4 @@
-import aboutBanner from "../../assets/aboutBanner.jpeg";
+import aboutBanner from "../../assets/bannerImage.jpeg";
 
 const Overview = () => {
   const paragraphText = [
