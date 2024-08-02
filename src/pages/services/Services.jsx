@@ -8,6 +8,7 @@ import PumpSolar from "./PumpSolar";
 import TowerConstruction from "./TowerConstruction";
 import waterImageBanner from "../../assets/water-is-life.jpg";
 import MiniBanner from "../../components/minibanner/MiniBanner";
+import Appointment from '../../components/appointment/Appointment'
 
 const Services = () => {
   const [currentBanner, setCurrentBanner] = useState(0);
@@ -96,6 +97,7 @@ const Services = () => {
       <Survey />
       <Drilling />
       <Camera />
+      <Appointment />
       <TestPumping />
       <PumpSolar />
       <TowerConstruction />

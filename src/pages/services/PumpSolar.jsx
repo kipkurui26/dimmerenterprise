@@ -4,6 +4,11 @@ import pumpImage2 from '../../assets/aboutBanner.jpeg';
 const PumpSolar = () => {
   return (
     <section className="pumpsolar" id="pump-and-solar-installation">
+      {/* <GalleryComponent imageList={imageList}/> */}
+      <div className="pump-solar__figure">
+        <img src={pumpImage1} alt="Water is life" className="pump-solar__figure--image"/>
+        <img src={pumpImage2} alt="Banner" className="pump-solar__figure--image"/>
+      </div>
       <div className="pump-solar__container">
         <h2 className="pumpSolarComponent__title">Pump and Solar Installation</h2>
         <p className="textcomponent__intro">
@@ -48,11 +53,6 @@ const PumpSolar = () => {
             </ul>
           </div>
         </div>
-      </div>
-      <div className="pump-solar__gallery">
-        <img src={pumpImage1} alt="Pump Installation" className="pump-solar__image" />
-        <img src={pumpImage2} alt="Pump Installation" className="pump-solar__image" />
-        <img src={pumpImage2} alt="Pump Installation" className="pump-solar__image" />
       </div>
     </section>
   )

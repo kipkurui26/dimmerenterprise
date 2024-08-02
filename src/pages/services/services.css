@@ -268,9 +268,10 @@
 }
 
 /* Pump and Solar */
-/* Pump and Solar */
 .pumpsolar {
+  display: flex;
   background: #e8f0f2;
+  flex-direction: column-reverse;
   padding: 40px 3%;
 }
 
@@ -315,7 +316,6 @@
   padding: 20px;
   border-radius: 8px;
 }
-
 .pump-solar__section-title {
   font-size: 1.5rem;
   font-weight: 600;
@@ -337,42 +337,23 @@
   color: #333;
   margin-bottom: 8px;
 }
-
-.pump-solar__gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 30px;
-}
-
-.pump-solar__image {
-  width: 100%;
-  max-width: 300px; /* Adjust max-width for small screens */
-  height: auto;
-  object-fit: cover;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.pump-solar__image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .pump-solar__cross {
   margin: 30px auto 50px;
   width: 60%;
   padding: 1px;
   background: #979189;
 }
+.pump-solar__figure--image{
+  width: 100%;
+}
+
 
 /* Responsive Styling */
 @media only screen and (min-width: 800px) {
   .pumpsolar {
     display: flex;
     justify-content: center;
+    flex-direction: unset;
     gap: 40px;
   }
   .pump-solar__container {
@@ -382,21 +363,149 @@
     flex-direction: column;
     gap: 30px;
   }
-
   .pump-solar__section {
     flex: 1;
   }
-
-  .pump-solar__gallery {
+  .pump-solar__figure{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 45%;
+  }
+  .pump-solar__figure--image{
+    border-radius: 10px;
+  }
+}
+/* Tower Construction */
+/* Elevated Tank Tower Construction */
+.towerconstruction {
+  background: #f4f4f4;
+  padding: 40px 3%;
+}
+
+.towerconstruction__container {
+  margin-bottom: 30px;
+}
+
+.towerConstructionComponent__title {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #05445E;
+  margin-bottom: 1.7rem;
+  padding-left: 20px;
+}
+
+.towerConstructionComponent__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: #189AB4;
+}
+
+.textcomponent__intro {
+  color: #082f49;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.tower-construction__sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tower-construction__section {
+  background: #ffffff;
+  border: 1px solid #cdd0d4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.tower-construction__section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #05445E;
+  margin-bottom: 10px;
+}
+
+.textcomponent__text {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.textcomponent__list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.textcomponent__list--item {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.tower-construction__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.tower-construction__image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tower-construction__image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tower-construction__cross {
+  margin: 30px auto 50px;
+  width: 60%;
+  padding: 1px;
+  background: #979189;
+}
+
+/* Responsive Styling */
+@media only screen and (min-width: 800px) {
+  .towerconstruction {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .tower-construction__container {
+    width: 55%;
+  }
+  .tower-construction__sections {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .tower-construction__section {
+    flex: 1;
+  }
+
+  .tower-construction__gallery {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 20px;
   }
   
-  .pump-solar__image {
-    max-width: 250px; /* Larger images for larger screens */
+  .tower-construction__image {
+    max-width: 350px;
     width: 100%;
   }
 }
