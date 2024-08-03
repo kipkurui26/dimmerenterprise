@@ -1,7 +1,8 @@
 import { useState } from "react";
 import testPump1 from "../../assets/testPumping.mp4";
-import testImage1 from "../../assets/water-is-life.webp";
-import testImage2 from "../../assets/bannerImage.jpeg";
+import testPump2 from "../../assets/test-pump2.png";
+import testPump3 from "../../assets/test-pump3.jpeg";
+import testPump4 from "../../assets/test-pump4.png";
 
 const TestPumping = () => {
   const [zoomedImage, setZoomedImage] = useState(null);
@@ -9,7 +10,6 @@ const TestPumping = () => {
   const handleImageClick = (imageSrc) => {
     setZoomedImage(imageSrc);
   };
-
   const closeZoom = () => {
     setZoomedImage(null);
   };
@@ -82,22 +82,22 @@ const TestPumping = () => {
           </div>
           <div className="drilling__image">
             <img
-              src={testImage1}
+              src={testPump2}
               alt="Drilling"
               className="drilling__image--content"
-              onClick={() => handleImageClick(testImage1)}
+              onClick={() => handleImageClick(testPump2)}
             />
             <img
-              src={testImage2}
+              src={testPump3}
               alt="Drilling"
               className="drilling__image--content"
-              onClick={() => handleImageClick(testImage2)}
+              onClick={() => handleImageClick(testPump3)}
             />
             <img
-              src={testImage1}
+              src={testPump4}
               alt="Drilling"
               className="drilling__image--content"
-              onClick={() => handleImageClick(testImage1)}
+              onClick={() => handleImageClick(testPump4)}
             />
           </div>
         </div>

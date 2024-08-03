@@ -3,6 +3,8 @@ import solarImage1 from '../../assets/solar-image1.webp'
 import solarImage2 from '../../assets/solar-image2.webp'
 import solarImage3 from '../../assets/solar-image3.webp'
 import solarImage4 from '../../assets/solar-image4.webp'
+import solarImage5 from '../../assets/solar-image5.jpeg'
+import solarImage6 from '../../assets/solar-image6.jpeg'
 
 const PumpSolar = () => {
   const imageList = [
@@ -25,6 +27,16 @@ const PumpSolar = () => {
       id: 4,
       src: solarImage4,
       alt: "Borehole Solar Installation 4"
+    },
+    {
+      id: 5,
+      src: solarImage5,
+      alt: "Borehole Solar Installation 5"
+    },
+    {
+      id: 6,
+      src: solarImage6,
+      alt: "Borehole Solar Installation 6"
     },
   ];
   return (

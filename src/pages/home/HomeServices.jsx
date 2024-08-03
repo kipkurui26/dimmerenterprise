@@ -2,6 +2,7 @@ import TestImage from "../../assets/bannerImage.jpeg";
 import drillingImage from '../../assets/drillingImage.png'
 import SurveyImage from '../../assets/surveykit.jpg'
 import testPumping from '../../assets/image1.jpg'
+import solarImage from '../../assets/solar-image2.webp'
 import towerContruction from '../../assets/tank-tower1+(Copy).webp'
 import { HashLink } from "react-router-hash-link";
 import { FaArrowRight } from "react-icons/fa6";
@@ -45,7 +46,7 @@ const HomeServices = () => {
       title: "Pump & Solar Installation",
       content:
         "Specialists in installing efficient pumps and solar power systems, we offer sustainable and cost-effective solutions for your water supply needs, reducing long-term energy costs.",
-      preview: TestImage,
+      preview: solarImage,
       path: "/services#pump-and-solar-installation",
     },
     {

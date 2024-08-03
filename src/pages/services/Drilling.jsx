@@ -1,8 +1,9 @@
 import { useState } from "react";
 import drillingVideo from "../../assets/drilling-video1.mp4";
 import drillingVideo1 from '../../assets/drillVideo.mp4'
-import testImage1 from "../../assets/image1.jpg";
-import textImage2 from "../../assets/surveykit.jpg";
+import drillingImage1 from '../../assets/drillingImage.png'
+import drillingImage2 from '../../assets/drilling-imagee2.jpeg'
+import drillingImage3 from '../../assets/drilling-image3.jpeg'
 
 const Drilling = () => {
   const [zoomedImage, setZoomedImage] = useState(null);
@@ -96,22 +97,22 @@ const Drilling = () => {
               Your browser does not support the video tag.
             </video>
             <img
-              src={testImage1}
+              src={drillingImage1}
               alt="Drilling"
               className="drilling__image--content"
-              onClick={() => handleImageClick(testImage1)}
+              onClick={() => handleImageClick(drillingImage1)}
             />
             <img
-              src={textImage2}
+              src={drillingImage2}
               alt="Drilling"
               className="drilling__image--content"
-              onClick={() => handleImageClick(textImage2)}
+              onClick={() => handleImageClick(drillingImage2)}
             />
             <img
-              src={testImage1}
+              src={drillingImage3}
               alt="Drilling"
               className="drilling__image--content"
-              onClick={() => handleImageClick(testImage1)}
+              onClick={() => handleImageClick(drillingImage3)}
             />
           </div>
         </div>
