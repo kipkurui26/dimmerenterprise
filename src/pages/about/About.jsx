@@ -1,5 +1,5 @@
 import MiniBanner from "../../components/minibanner/MiniBanner";
-import BannerImage from "../../assets/water-is-life.jpg";
+import BannerImage from "../../assets/water-is-life.webp";
 import "./about.css";
 import Mission from "./Mission";
 import Appointment from "../../components/appointment/Appointment";

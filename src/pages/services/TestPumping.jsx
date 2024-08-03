@@ -1,6 +1,6 @@
 import { useState } from "react";
 import testPump1 from "../../assets/drilling-video1.mp4";
-import testImage1 from "../../assets/water-is-life.jpg";
+import testImage1 from "../../assets/water-is-life.webp";
 import testImage2 from "../../assets/bannerImage.jpeg";
 
 const TestPumping = () => {

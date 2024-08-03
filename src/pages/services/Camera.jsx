@@ -1,5 +1,5 @@
 import GalleryComponent from "./GalleryComponent";
-import TestImage1 from "../../assets/water-is-life.jpg";
+import TestImage1 from "../../assets/water-is-life.webp";
 import TestImage2 from "../../assets/bannerImage.jpeg";
 import TestImage3 from "../../assets/landing.jpg";
 

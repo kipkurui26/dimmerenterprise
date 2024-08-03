@@ -1,6 +1,6 @@
 import ContactForm from "../../components/contact_form/ContactForm";
 import MiniBanner from "../../components/minibanner/MiniBanner";
-import BannerImage from "../../assets/water-is-life.jpg";
+import BannerImage from "../../assets/water-is-life.webp";
 import "./contact.css";
 import MetaTags from "../../components/metas/MetaTags";
 

@@ -6,7 +6,7 @@ import Camera from "./Camera";
 import TestPumping from "./TestPumping";
 import PumpSolar from "./PumpSolar";
 import TowerConstruction from "./TowerConstruction";
-import waterImageBanner from "../../assets/water-is-life.jpg";
+import waterImageBanner from "../../assets/water-is-life.webp";
 import MiniBanner from "../../components/minibanner/MiniBanner";
 import Appointment from '../../components/appointment/Appointment'
 import MetaTags from "../../components/metas/MetaTags";

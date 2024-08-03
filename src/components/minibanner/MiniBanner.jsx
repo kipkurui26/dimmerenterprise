@@ -12,6 +12,7 @@ const MiniBanner = ({ isAbout, hashLink, imageImg, imageAlt, breadcrumbTitle, mi
           src={imageImg}
           alt={imageAlt}
           className="minibanner__image"
+          loading="eager"
         />
       </figure>
       <div className="minibanner__overlay"></div>
