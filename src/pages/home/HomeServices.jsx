@@ -1,6 +1,8 @@
 import TestImage from "../../assets/bannerImage.jpeg";
+import drillingImage from '../../assets/drillingImage.png'
 import SurveyImage from '../../assets/surveykit.jpg'
-import DrillingImage from '../../assets/image1.jpg'
+import testPumping from '../../assets/image1.jpg'
+import towerContruction from '../../assets/tank-tower1+(Copy).webp'
 import { HashLink } from "react-router-hash-link";
 import { FaArrowRight } from "react-icons/fa6";
 
@@ -19,7 +21,7 @@ const HomeServices = () => {
       title: "Borehole Drilling",
       content:
         "Offering expert borehole drilling services, customized for both residential and commercial applications. Our precision drilling ensures a reliable water supply tailored to your specific needs.",
-      preview: DrillingImage,
+      preview: drillingImage,
       path: "/services#borehole-drilling",
     },
     {
@@ -35,7 +37,7 @@ const HomeServices = () => {
       title: "Test Pumping",
       content:
         "Providing professional test pumping services to evaluate groundwater yield and quality. This critical step ensures sustainable water management and accurate system sizing.",
-      preview: TestImage,
+      preview: testPumping,
       path: "/services#test-pumping",
     },
     {
@@ -51,7 +53,7 @@ const HomeServices = () => {
       title: "Tank & Tower Construction",
       content:
         "Our robust tank and tower construction services provide secure and reliable water storage solutions, designed to meet the highest standards of durability and functionality.",
-      preview: TestImage,
+      preview: towerContruction,
       path: "/services#tank-and-tower-construction",
     },
   ];

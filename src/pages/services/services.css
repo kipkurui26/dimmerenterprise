@@ -111,6 +111,7 @@
 }
 .drilling__image--content {
   width: 100px;
+  height: 100px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }

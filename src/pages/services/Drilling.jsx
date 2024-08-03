@@ -1,5 +1,6 @@
 import { useState } from "react";
 import drillingVideo from "../../assets/drilling-video1.mp4";
+import drillingVideo1 from '../../assets/drillVideo.mp4'
 import testImage1 from "../../assets/image1.jpg";
 import textImage2 from "../../assets/surveykit.jpg";
 
@@ -83,6 +84,17 @@ const Drilling = () => {
             </video>
           </div>
           <div className="drilling__image">
+          <video
+              className="drilling__image--content"
+              muted
+              controls
+              autoPlay
+              loop
+              onClick={() => handleImageClick(drillingVideo1)}
+            >
+              <source src={drillingVideo1} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             <img
               src={testImage1}
               alt="Drilling"
