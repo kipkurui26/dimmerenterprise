@@ -1,30 +1,20 @@
 import GalleryComponent from "./GalleryComponent";
-import TestImage1 from "../../assets/water-is-life.webp";
-import TestImage2 from "../../assets/bannerImage.jpeg";
-import TestImage3 from "../../assets/landing.jpg";
+import cameraImage1 from '../../assets/camera-image1.jpeg'
+import cameraImage2 from '../../assets/camera-image2.jpg' 
 
 const Camera = () => {
   const imageList = [
     {
       id: 1,
-      src: TestImage1,
-      alt: "Water is life",
+      src: cameraImage1,
+      alt: "Borehole camera inspection 1",
     },
     {
       id: 2,
-      src: TestImage2,
-      alt: "Banner",
+      src: cameraImage2,
+      alt: "Borehole camera inspection 2",
     },
-    {
-      id: 3,
-      src: TestImage3,
-      alt: "Banner",
-    },
-    {
-      id: 4,
-      src: TestImage2,
-      alt: "Banner",
-    },
+
   ];
   return (
     <section className="camera" id="camera-inspection">

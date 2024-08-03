@@ -33,7 +33,7 @@ const Home = () => {
         bannerDescription={
           "We don’t just drill boreholes; we build lifelines for communities. Our mission is to provide innovative, sustainable water solutions that enhance quality of life and support regional growth. Join us in our journey toward a sustainable future—each drop of water contributing to health, prosperity, and empowerment. Dimmer Enterprises LTD—drilling for a better tomorrow."
         }
-        bannerButton={"Request a Quore"}
+        bannerButton={"Request a Quote"}
       />
       <HomeAbout />
       <Features />

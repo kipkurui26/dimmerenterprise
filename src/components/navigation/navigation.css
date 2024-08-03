@@ -165,6 +165,7 @@
   .nav__quote {
     display: block;
     padding: 4px 10px;
+    text-decoration: none;
     border: none;
     outline: none;
     background: #138acf;

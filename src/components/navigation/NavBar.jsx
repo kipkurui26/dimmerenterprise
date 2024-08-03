@@ -35,6 +35,7 @@ const NavBar = () => {
     if (screenWidth < 800) {
       setShowMenu(false);
     }
+    window.scrollTo(0, 0);
   }, [location, screenWidth]); // Dependency on location and screenWidth
 
   return (
@@ -61,7 +62,7 @@ const NavBar = () => {
             ))}
           </ul>
         )}
-        <button className="nav__quote">Get A Quote</button>
+        <Link className="nav__quote" to={"https://wa.me/254712055342"}>Let`s Chat</Link>
         <div className="nav__menu" onClick={() => setShowMenu(!showMenu)}>
           {showMenu ? (
             <IoClose className="nav__menu--button" />

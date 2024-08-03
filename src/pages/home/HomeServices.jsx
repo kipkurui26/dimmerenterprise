@@ -1,8 +1,8 @@
-import TestImage from "../../assets/bannerImage.jpeg";
 import drillingImage from '../../assets/drillingImage.png'
-import SurveyImage from '../../assets/surveykit.jpg'
+import SurveyImage from '../../assets/survey2.jpg'
 import testPumping from '../../assets/image1.jpg'
 import solarImage from '../../assets/solar-image2.webp'
+import cameraImage from '../../assets/camera-image2.jpg'
 import towerContruction from '../../assets/tank-tower1+(Copy).webp'
 import { HashLink } from "react-router-hash-link";
 import { FaArrowRight } from "react-icons/fa6";
@@ -30,7 +30,7 @@ const HomeServices = () => {
       title: "Camera Inspection",
       content:
         "Utilize advanced camera inspection technology to assess the condition of your boreholes. Our detailed inspections help maintain optimal performance and identify any issues early.",
-      preview: TestImage,
+      preview: cameraImage,
       path: "/services#camera-inspection",
     },
     {
